@@ -1,0 +1,101 @@
+/* design-kit · tokens.css
+   直接 @import 或复制到项目根样式。所有组件只允许引用这里的变量。 */
+
+:root {
+  /* 中性 */
+  --c-bg: #FFFFFF;
+  --c-bg-sub: #F7F8FA;
+  --c-line: #E5E7EB;
+  --c-text: #111827;
+  --c-text-2: #4B5563;
+  --c-text-3: #9CA3AF;
+
+  /* 强调 */
+  --c-primary: #2563EB;
+  --c-primary-hover: #1D4ED8;
+  --c-primary-soft: #EFF4FF;
+
+  /* 状态 */
+  --c-ok: #16A34A;
+  --c-warn: #D97706;
+  --c-danger: #DC2626;
+
+  /* 字阶 */
+  --fs-display: 56px;
+  --lh-display: 64px;
+  --fs-h1: 40px;
+  --lh-h1: 48px;
+  --fs-h2: 28px;
+  --lh-h2: 36px;
+  --fs-h3: 20px;
+  --lh-h3: 28px;
+  --fs-body: 16px;
+  --lh-body: 26px;
+  --fs-sm: 14px;
+  --lh-sm: 22px;
+  --fs-caption: 12px;
+  --lh-caption: 18px;
+
+  /* 间距 */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  /* 圆角 */
+  --r-btn: 8px;
+  --r-card: 12px;
+  --r-container: 16px;
+  --r-pill: 999px;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(17, 24, 39, .06);
+  --shadow-md: 0 8px 24px -8px rgba(17, 24, 39, .12);
+
+  /* 动效 */
+  --t-fast: 150ms;
+  --t-base: 250ms;
+  --t-slow: 500ms;
+  --ease-out: ease-out;
+  --ease-std: cubic-bezier(.2, .8, .2, 1);
+
+  /* 版心 */
+  --w-content: 1120px;
+  --pad-page: 80px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fs-display: 40px;
+    --lh-display: 48px;
+    --fs-h1: 32px;
+    --lh-h1: 40px;
+    --pad-page: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --fs-display: 32px;
+    --lh-display: 40px;
+    --fs-h1: 26px;
+    --lh-h1: 34px;
+    --fs-h2: 22px;
+    --lh-h2: 30px;
+    --pad-page: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-base: 0ms;
+    --t-slow: 0ms;
+  }
+}
